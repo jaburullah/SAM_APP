@@ -4,10 +4,10 @@
 var config = {
     sessionExpiresTime:1000 * 600, //(micro seconds * seconds) = minutes
     port:process.env.PORT || 8083,
-    ip:"localhost",
-    // ip:"lakalaka.herokuapp.com",
-    mongoDBConnection:"mongodb://localhost:27017/Ticketing",
-    // mongoDBConnection:"mongodb://SAM_App:Lakalakalaka1!@cluster0-shard-00-00-wtplf.mongodb.net:27017,cluster0-shard-00-01-wtplf.mongodb.net:27017,cluster0-shard-00-02-wtplf.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin",
+    //ip:"localhost",
+    ip:"lakalaka.herokuapp.com",
+    //mongoDBConnection:"mongodb://localhost:27017/Ticketing",
+    mongoDBConnection:"mongodb://SAM_App:Lakalakalaka1!@cluster0-shard-00-00-wtplf.mongodb.net:27017,cluster0-shard-00-01-wtplf.mongodb.net:27017,cluster0-shard-00-02-wtplf.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin",
     fcmServerKey:"AAAAaFeMdI8:APA91bFoaGe5I97Dn2nB8DItiOZgmLKlPSj3EfteXXNKWUMtsP4IgGlcSAeKmq_Gneis0xxgmRv14I46uQq5iYMDhU7GPxQb66stXoXYpjCOrxhKYf3Wpou6gCWQ3hg2czok8vKEGY7s",
     appSetting:{
         ticketCategory:{
