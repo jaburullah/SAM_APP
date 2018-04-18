@@ -5,8 +5,8 @@ var Tracking = Tracking || {};
 Tracking.service = {};
 
 Tracking.service.Xhr = function() {
-    var _url = 'http://localhost:8083';
-    // var _url = 'https://lakalaka.herokuapp.com';
+    //var _url = 'http://localhost:8083';
+    var _url = 'https://lakalaka.herokuapp.com';
 
     var _updateURL = function(url){
         return _url+url;
