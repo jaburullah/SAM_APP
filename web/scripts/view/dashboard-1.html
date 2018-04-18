@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="cls-body-dashboard">
+        <div class="cls-dashboard-left">
+            <div class="cls-logo">
+                <a class="title-text">
+                    Test
+                </a>
+            </div>
+            <div class="cls-left-wrapper">
+                <ul class="cls-nav">
+                    <li class="active">
+                        <a >
+                            <i class="fa fa-1x fa-building"></i>
+                            <p>Test 1</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a >
+                            <i class="fa fa-1x fa-male"></i>
+                            <p>Test 2</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a >
+                            <i class="fa fa-1x fa-user"></i>
+                            <p>Test 2</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a >
+                            <i class="fa fa-1x fa-ticket"></i>
+                            <p>Test 3</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cls-sidebar-background"></div>
+        </div>
+        <div class="cls-dashboard-main">
+            <nav class="cls-dashboard-header">
+                <div class="cls-dashboard-header-container">
+                    <div class="cls-dashboard-header-title">
+                        <a class="cls-dashboard-header-title-text" href="#">Material Dashboard</a>
+                    </div>
+                    <div class="cls-dashboard-header-icon">
+                        <ul class="cls-nav cls-nav-right">
+                            <li>
+                                <a>
+                                    <i class="fa fa-1x fa-user"></i>
+
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="cls-content">
+                <div class="csl-row">
+                    <div class="cls-dashboard-body">
+                        <div class="cls-card">
+                            <div class="cls-card-header">
+                                <div class="cls-nav-tabs-navigation">
+                                    <div class="cls-nav-tabs-wrapper">
+                                        <ul class="cls-nav-tabs">
+                                            <li>
+                                                <a>
+                                                    <i class="fa fa-1x fa-user"></i>
+                                                    test
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <i class="fa fa-1x fa-user"></i>
+                                                    test 1
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cls-card-content">
+                                <div class="cls-tab-content">
+
+                                    <div class="cls-tab-content-row">
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Username</label>
+                                            <input type="text" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+    $(".cls-form-grp").click(function(e){
+        var $this = $(this);
+        $this.addClass('is-focused');
+        e.stopPropagation();
+    });
+
+    $(".cls-form-grp input").keyup(function(e){
+
+        var $this = $(this).parent('.cls-form-grp');
+        $this.addClass('is-empty');
+        if ($(this).val()) {
+            $this.removeClass('is-empty');
+        }
+        e.stopPropagation();
+
+    });
+
+    $('body').click(function() {
+        $(".cls-form-grp").removeClass('is-focused');
+    });
+
+</script>
+</html>

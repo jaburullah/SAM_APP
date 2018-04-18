@@ -1,0 +1,495 @@
+    <div class="cls-body-dashboard">
+        <div class="cls-dashboard-left">
+            <div class="cls-logo">
+                <a class="title-text">
+                    Ticketing Tracking System
+                </a>
+            </div>
+            <div class="cls-left-wrapper">
+                <ul class="cls-nav" id="ulNav">
+                    <li data-name="apartment">
+                        <a >
+                            <i class="fa fa-1x fa-building"></i>
+                            <p>Apartment</p>
+                        </a>
+                    </li>
+                    <li data-name="manager">
+                        <a >
+                            <i class="fa fa-1x fa-male"></i>
+                            <p>Manager</p>
+                        </a>
+                    </li>
+                    <li data-name="user">
+                        <a >
+                            <i class="fa fa-1x fa-user"></i>
+                            <p>User</p>
+                        </a>
+                    </li>
+                    <li data-name="ticket">
+                        <a >
+                            <i class="fa fa-1x fa-ticket"></i>
+                            <p>Ticket</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cls-sidebar-background"></div>
+        </div>
+        <div class="cls-dashboard-main">
+            <nav class="cls-dashboard-header">
+                <div class="cls-dashboard-header-container">
+                    <div class="cls-dashboard-header-title">
+                        <a class="cls-dashboard-header-title-text" href="#">Home</a>
+                    </div>
+                    <div class="cls-dashboard-header-icon">
+                        <ul class="cls-nav cls-nav-right">
+                            <li>
+                                <a>
+                                    <p class="cls-login-user">welcome,</p>
+                                </a>
+                            </li>
+                            <li class="cls-home">
+                                <a title="Home">
+                                    <i class="fa fa-1x fa-home"></i>
+                                </a>
+                            </li>
+                            <li class="cls-logout">
+                                <a title="Logout">
+                                    <i class="fa fa-1x fa-sign-out"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="cls-content">
+                <!-- Home -->
+                <div class="csl-row cls-tab-body-content cls-body-home">
+                    <div class="cls-home-left-container">
+                        <!-- Recent Tickets-->
+                        <div class="">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="cls-card cls-card-stats" data-background-color="blue">
+                                    <div class="cls-card-header" >
+                                        <i class="fa fa-3x fa-ticket"></i>
+                                    </div>
+                                    <div class="cls-card-content">
+                                        <p class="cls-category">Recent Tickets</p>
+                                        <h3 id="h3RecentTicketCount" class="title">3<small>Tickets</small></h3>
+                                    </div>
+                                    <div class="cls-card-footer">
+                                        <div class="cls-stats">
+                                            <!--<i class="fa fa-1x fa-exclamation"></i>-->
+                                            <a data-name="recent" class="clsViewTickets">View Tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Open Tickets-->
+                        <div class="">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="cls-card cls-card-stats" data-background-color="red">
+                                    <div class="cls-card-header" >
+                                        <i class="fa fa-3x fa-ticket"></i>
+                                    </div>
+                                    <div class="cls-card-content">
+                                        <p class="cls-category">Open Tickets</p>
+                                        <h3 id="h3OpenTicketCount" class="title">5<small>Tickets</small></h3>
+                                    </div>
+                                    <div class="cls-card-footer">
+                                        <div class="cls-stats">
+                                            <!--<i class="fa fa-1x fa-exclamation"></i>-->
+                                            <a data-name="open" class="clsViewTickets">View Tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Closed Tickets-->
+                        <div class="">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="cls-card cls-card-stats" data-background-color="green">
+                                    <div class="cls-card-header" >
+                                        <i class="fa fa-3x fa-ticket"></i>
+                                    </div>
+                                    <div class="cls-card-content">
+                                        <p class="cls-category">Closed Ticket</p>
+                                        <h3 id="h3ClosedTicketCount" class="title">2<small>Tickets</small></h3>
+                                    </div>
+                                    <div class="cls-card-footer">
+                                        <div class="cls-stats">
+                                            <!--<i class="fa fa-1x fa-exclamation"></i>-->
+                                            <a data-name="closed" class="clsViewTickets">View Tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- All Tickets-->
+                        <div class="">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="cls-card cls-card-stats" data-background-color="orange">
+                                    <div class="cls-card-header" >
+                                        <i class="fa fa-3x fa-ticket"></i>
+                                    </div>
+                                    <div class="cls-card-content">
+                                        <p class="cls-category">Total Ticket</p>
+                                        <h3 id="h3AllTicketCount" class="title">5<small>Tickets</small></h3>
+                                    </div>
+                                    <div class="cls-card-footer">
+                                        <div class="cls-stats">
+                                            <!--<i class="fa fa-1x fa-exclamation"></i>-->
+                                            <a data-name="all" class="clsViewTickets" >View Tickets</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cls-home-right-container">
+                        <div class="cls-row">
+                            <div class="col-md-12">
+                                <div class="cls-card">
+                                    <div class="cls-card-header" data-background-color="purple">
+                                        <h5 class="cls-title">Recent Tickets</h5>
+                                    </div>
+                                    <div class="cls-card-content cls-table-responsive">
+                                        <table class="cls-table cls-tbl-dashboard-tickets">
+                                            <thead class="cls-text-primary">
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Type</th>
+                                                    <th>Priority</th>
+                                                    <th>Resolution</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- apartment -->
+                <div class="csl-row cls-tab-body-content cls-body-apartment" >
+                    <div class="cls-dashboard-body">
+                        <div class="cls-card">
+                            <div class="cls-card-header">
+                                <div class="cls-nav-tabs-navigation">
+                                    <div class="cls-nav-tabs-wrapper">
+                                        <ul class="cls-nav-tabs" data-name="apartment">
+                                            <li class="active-tab" data-name="create">
+                                                <a>
+                                                    <i class="fa fa-2x fa-building"></i>
+                                                    Create Apartment
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li data-name="view">
+                                                <a>
+                                                    <i class="fa fa-2x fa-building-o"></i>
+                                                    View Apartment
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cls-card-content">
+                                <div data-name="create" class="cls-tab-content">
+                                    <div class="cls-tab-content-row">
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Name</label>
+                                            <input type="text" id="txtApartmentName" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">No. of Floors</label>
+                                            <input type="text" id="txtNoOfFloors" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Address</label>
+                                            <textarea id="txtAddress" class="cls-form-control" rows="5" />
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <button id="btnAddApartment" class="cls-btn cls-btn-primary cls-pull-right">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div data-name="view" class="cls-tab-content">
+                                    <div class="cls-table-responsive">
+                                        <table class="cls-table cls-table-hover">
+                                            <thead class="cls-text-warning">
+                                            <tr>
+                                                <th class="cls-tbl-apprt-sno">S.No</th>
+                                                <th class="cls-tbl-apprt-name">Name</th>
+                                                <th class="cls-tbl-apprt-floor">Floors</th>
+                                                <th class="cls-tbl-apprt-address">Address</th>
+                                                <th class="cls-tbl-apprt-action"></th>
+                                            </tr></thead>
+                                            <tbody class="cls-tbl-apartment-body">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- manager -->
+                <div class="csl-row cls-tab-body-content cls-body-manager" >
+                    <div class="cls-dashboard-body">
+                        <div class="cls-card">
+                            <div class="cls-card-header">
+                                <div class="cls-nav-tabs-navigation">
+                                    <div class="cls-nav-tabs-wrapper">
+                                        <ul class="cls-nav-tabs" data-name="manager">
+                                            <li class="active-tab" data-name="create">
+                                                <a>
+                                                    <i class="fa fa-2x fa-address-card"></i>
+                                                    Create Manager
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li data-name="view">
+                                                <a>
+                                                    <i class="fa fa-2x fa-address-card-o"></i>
+                                                    View Manager
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cls-card-content">
+                                <div data-name="create" class="cls-tab-content">
+
+                                    <div class="cls-tab-content-row">
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Name</label>
+                                            <input type="text" id="txtManagerName" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">E-mail</label>
+                                            <input type="text" id="txtEmail" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Password</label>
+                                            <input type="password" id="txtManagerPassword" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Mobile/Cell No</label>
+                                            <input type="text" id="txtMobileNo" class="cls-form-control">
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                        <div class="cls-form-grp label-floating is-empty">
+                                            <label class="cls-control-label">Apartment</label>
+                                            <select class="clsSelApartment" multiple="multiple">
+                                            </select>
+                                            <span class="cls-span-input"></span>
+                                        </div>
+                                    </div>
+                                    <button class="cls-btn cls-btn-primary cls-pull-right" id="btnAddManager">
+                                        Add
+                                    </button>
+                                </div>
+                                <div data-name="view" class="cls-tab-content">
+                                    <div class="cls-table-responsive">
+                                        <table class="cls-table cls-table-hover">
+                                            <thead class="cls-text-warning">
+                                            <tr>
+                                                <th class="cls-tbl-manager-sno">S.No</th>
+                                                <th class="cls-tbl-manager-name">Name</th>
+                                                <th class="cls-tbl-manager-email">E-mail</th>
+                                                <th class="cls-tbl-manager-mobile">Mobile No</th>
+                                                <th class="cls-tbl-manager-action"></th>
+                                            </tr></thead>
+                                            <tbody class="cls-tbl-manager-body">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- user -->
+                <div class="csl-row cls-tab-body-content cls-body-user" >
+                    <div class="cls-dashboard-body">
+                        <div class="cls-card">
+                            <div class="cls-card-header">
+                                <div class="cls-nav-tabs-navigation">
+                                    <div class="cls-nav-tabs-wrapper">
+                                        <ul class="cls-nav-tabs" data-name="user">
+                                            <li class="active-tab" data-name="create">
+                                                <a>
+                                                    <i class="fa fa-2x fa-address-book"></i>
+                                                    Create User
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                            <li data-name="view">
+                                                <a>
+                                                    <i class="fa fa-2x fa-address-book-o"></i>
+                                                    View User
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cls-card-content">
+                                <div data-name="create" class="cls-tab-content">
+
+                                    <div class="cls-tab-content-row">
+                                        <div class="cls-tab-content-row">
+                                            <div class="cls-form-grp label-floating is-empty">
+                                                <label class="cls-control-label">Name</label>
+                                                <input type="text" id="txtUserName" class="cls-form-control">
+                                                <span class="cls-span-input"></span>
+                                            </div>
+                                            <div class="cls-form-grp label-floating is-empty">
+                                                <label class="cls-control-label">E-mail</label>
+                                                <input type="text" id="txtUserEmail" class="cls-form-control">
+                                                <span class="cls-span-input"></span>
+                                            </div>
+                                            <div class="cls-form-grp label-floating is-empty">
+                                                <label class="cls-control-label">Password</label>
+                                                <input type="password" id="txtUserPassword" class="cls-form-control">
+                                                <span class="cls-span-input"></span>
+                                            </div>
+                                            <div class="cls-form-grp label-floating is-empty">
+                                                <label class="cls-control-label">Mobile/Cell No</label>
+                                                <input type="text" id="txtUserMobileNo" class="cls-form-control">
+                                                <span class="cls-span-input"></span>
+                                            </div>
+                                            <div class="cls-form-grp label-floating is-empty">
+                                                <label class="cls-control-label">Apartment</label>
+                                                <select class="clsSelUserApartment" multiple="multiple">
+                                                </select>
+                                                <span class="cls-span-input"></span>
+                                            </div>
+                                        </div>
+                                        <button id="btnAddUser" class="cls-btn cls-btn-primary cls-pull-right">
+                                            Add
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div data-name="view" class="cls-tab-content">
+                                    <div class="cls-table-responsive">
+                                        <table class="cls-table cls-table-hover">
+                                            <thead class="cls-text-warning">
+                                            <tr>
+                                                <th class="cls-tbl-manager-sno">S.No</th>
+                                                <th class="cls-tbl-manager-name">Name</th>
+                                                <th class="cls-tbl-manager-email">E-mail</th>
+                                                <th class="cls-tbl-manager-mobile">Mobile No</th>
+                                                <th class="cls-tbl-manager-action"></th>
+                                            </tr></thead>
+                                            <tbody class="cls-tbl-user-body">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ticket -->
+                <div class="csl-row cls-tab-body-content cls-body-ticket" >
+                    <div class="cls-dashboard-body">
+                        <div class="cls-card">
+                            <div class="cls-card-header">
+                                <div class="cls-nav-tabs-navigation">
+                                    <div class="cls-nav-tabs-wrapper">
+                                        <ul class="cls-nav-tabs" data-name="ticket">
+                                            <!--<li class="active-tab">-->
+                                                <!--<a>-->
+                                                    <!--<i class="fa fa-1x fa-address-book"></i>-->
+                                                    <!--Create User-->
+                                                    <!--<div class="cls-ripple-container"></div>-->
+                                                <!--</a>-->
+                                            <!--</li>-->
+                                            <li class="active-tab" data-name="view">
+                                                <a>
+                                                    <i class="fa fa-2x fa-ticket"></i>
+                                                    View Tickets
+                                                    <div class="cls-ripple-container"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cls-card-content">
+                                <div data-name="view" class="cls-tab-content">
+                                    <div class="cls-table-responsive">
+                                        <table class="cls-table cls-table-hover">
+                                            <thead class="cls-text-warning">
+                                            <tr><th>ID</th>
+                                                <th>Name</th>
+                                                <th>Salary</th>
+                                                <th>Country</th>
+                                            </tr></thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Dakota Rice</td>
+                                                <td>$36,738</td>
+                                                <td>Niger</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Minerva Hooper</td>
+                                                <td>$23,789</td>
+                                                <td>Curaçao</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Sage Rodriguez</td>
+                                                <td>$56,142</td>
+                                                <td>Netherlands</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Philip Chaney</td>
+                                                <td>$38,735</td>
+                                                <td>Korea, South</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        app.__proto__.login = new Tracking.controller.dashBoard();
+    </script>
