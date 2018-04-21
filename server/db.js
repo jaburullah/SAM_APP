@@ -47,9 +47,11 @@ module.exports = {
             var filterObj = {};
             if (obj.email) {
                 filterObj.email = obj.email;
+                filterObj.password = obj.password;
             }
             else if (obj.mobileNo) {
                 filterObj.mobileNo = obj.mobileNo;
+                filterObj.password = obj.password;
             }
             collection.findOne(filterObj, function (err, items) {
                 if (err) {
